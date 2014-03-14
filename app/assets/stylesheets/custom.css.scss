@@ -1,4 +1,6 @@
 @import "bootstrap";
+$grayMediumLight: #eaeaea;
+
 html {
   overflow-y: scroll;
 }
@@ -17,10 +19,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
+  h1 {  
   margin-bottom: 10px;
+  }
 }
 
 /* typography */
@@ -42,7 +43,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $grayLight;
 }
 
 p {
@@ -62,11 +63,10 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-}
-
-#logo:hover {
+&:hover {
   color: #fff;
   text-decoration: none;
+  }
 }
 
 /* footer */
@@ -74,28 +74,26 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999;
-}
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+  color: $gray;
+    &:hover {
+  color: $grayDarker;
+    }
+  }
 
-footer a {
-  color: #555;
-}
 
-footer a:hover {
-  color: #222;
-}
-
-footer small {
+  small {
   float: left;
-}
+  }
 
-footer ul {
+  ul {
   float: right;
   list-style: none;
-}
-
-footer ul li {
+    li {
   float: left;
   margin-left: 10px;
+    }
+  }
 }
